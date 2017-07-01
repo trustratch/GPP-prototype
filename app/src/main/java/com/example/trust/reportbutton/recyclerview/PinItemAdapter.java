@@ -5,13 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
 import com.example.trust.reportbutton.EvaluationData;
-import com.example.trust.reportbutton.KpiBarDB;
-import com.example.trust.reportbutton.PasswordObject;
 import com.example.trust.reportbutton.R;
 
 import java.util.Collections;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.trust.reportbutton.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/perform_grade_button"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:id="@+id/outer_bound"
+            android:layout_centerInParent="true"
+            android:background="@drawable/oval_border_line_primary_color"
+            android:layout_width="47dp"
+            android:layout_height="47dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/inner_bound"
+            android:background="@drawable/oval_primary_color"
+            android:layout_centerInParent="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+        <TextView
+            android:id="@+id/perform_grade_textview"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

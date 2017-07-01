@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ababab</color>
+
+    <color name="theme_color">@color/AppPrimaryColor</color>
+    <color name="action_color">@color/AccentColor</color>
+    <color name="AppPrimaryColor">#02c00a</color> <!-- Use for default cover photo/thumbnail, nav tabs -->
+    <color name="AccentColor">#02c00a</color> <!-- Use for action buttons, text links -->
+
+    <color name="title_color">#de000000</color>
+    <color name="subtitle_color">#8a000000</color>
+
+    <color name="primary_text">#de000000</color>
+    <color name="secondary_text">#8a000000</color>
+    <color name="tertiary_text">#8a000000</color>
+    <color name="button_text">#ffffff</color>
+    <color name="button_text_inverse">@color/black</color>
+
+    <color name="contact_preview">#bdbdbd</color>
+
+    <color name="item_bg">#fafafa</color>
+    <color name="app_bg">#f5f5f5</color>
+    <color name="app_light_bg">@color/white</color>
+    <color name="app_dark_bg">#ededed</color>
+    <color name="dialog_bg">#ffffff</color>
+    <color name="action_bar_bg">#ffffff</color>
+    <color name="input_text_bg">@color/app_light_bg</color>
+
+    <color name="content_divider">#d8d8d8</color>
+
+    <color name="url_text">#2868bc</color>
+
+    <!--using accent color instead-->
+    <!--<color name="active_color">#02c00a</color>-->
+    <color name="inactive_color">#c7c7c7</color>
+    <color name="notification_color">#E5504C</color>
+    <color name="warning_color">#a92434</color>
+    <color name="edge_color">#d8d8d8</color>
+
+    <color name="date_bg">#99d1ecf1</color>
+    <color name="event_bg">#3302c00a</color>
+    <color name="call_bg">#46000000</color>
+
+    <color name="bubble_name">#de000000</color>
+    <color name="bubble_title">#8a000000</color>
+    <color name="bubble_mine_bg">#23c82a</color>
+    <color name="bubble_mine_bg_inverse">#ffffff</color>
+    <color name="bubble_mine_primary">#ffffff</color>
+    <color name="bubble_mine_secondary">#b3ffffff</color>
+    <color name="bubble_mine_link">#ffffff</color>
+    <color name="bubble_mine_progress">#b3ffffff</color>
+    <color name="bubble_mine_progress_bg">#4dffffff</color>
+    <color name="bubble_friend_bg">#e5e5e5</color>
+    <color name="bubble_friend_bg_inverse">#23c82a</color>
+    <color name="bubble_friend_primary">#de000000</color>
+    <color name="bubble_friend_secondary">#8a000000</color>
+    <color name="bubble_friend_link">@color/AppPrimaryColor</color>
+    <color name="bubble_friend_progress">#42000000</color>
+    <color name="bubble_friend_progress_bg">#26000000</color>
+
+    <color name="voice_progress">@color/AccentColor</color>
+    <color name="voice_progress_bg">#4801c00a</color>
+
+    <!--unlock colors -->
+    <color name="preview_topic_warning_bg">#f3fcf4</color>
+    <color name="vote_bg_color">#d8f6d9</color>
+    <color name="vote_boarder_color">#02c00a</color>
+    <color name="unread_row">#fff7e8</color>
+
+    <!--linear progress bar-->
+    <array name="progress_colors">
+        <item>@color/progress_active_state</item>
+        <item>@color/progress_inactive_state</item>
+    </array>
+
+    <color name="progress_bg">#2602c00a</color>
+
+    <!--static colors-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="dark_translucent">#99000000</color>
+    <color name="light_translucent">#1a000000</color>
+
+    <color name="kpi_low">#6a6a6a</color>
+    <color name="kpi_medium">#ffa300</color>
+    <color name="kpi_high">#02c00a</color>
+
+    <color name="engagement_bg">#d6d6d6</color>
+    <color name="engagement_gradient">#0D6a6a6a</color>
+
+    <color name="form_status_waiting">#fdaf1e</color>
+    <color name="form_icon_color">#02c00a</color>
+    <color name="form_status_approved">#75bd3f</color>
+    <color name="form_status_denied">#666666</color>
+    <color name="form_bg_description">#33ffffff</color>
+    <color name="form_bg_due_date">@color/contact_preview</color>
+    <color name="form_bg_due_date_warning">#d64c4c</color>
+
+    <!--file colors-->
+    <color name="default_file_bg">#5e5e5e</color>
+    <color name="text_file_bg">#37abe1</color>
+    <color name="word_file_bg">#20569d</color>
+    <color name="excel_file_bg">#167444</color>
+    <color name="ppt_file_bg">#d5471d</color>
+    <color name="csv_file_bg">#2da11f</color>
+    <color name="pdf_file_bg">#d23c3c</color>
+    <color name="audio_file_bg">#9154bd</color>
+    <color name="html_file_bg">#e64c17</color>
+    <color name="zip_file_bg">#ed488c</color>
+
+    <!--pinlock colors-->
+    <color name="pin_gray">@color/tertiary_text</color>
+    <color name="pin_blue">@color/secondary_text</color>
+    <color name="pin_light_gray_50">@color/inactive_color</color>
+
+    <!--voip-->
+    <color name="disable_color">#bdbdbd</color>
+
+    <!--group colors-->
+    <color name="group_workspace">@color/AppPrimaryColor</color>
+    <color name="group_unlock">#fdaf1e</color>
+
+    <color name="progress_active_state">#000000</color>
+    <color name="progress_inactive_state">#4b000000</color>
+
+    <color name="vibrant_green">#23c82a</color>
+
+</resources>

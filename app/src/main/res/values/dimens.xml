@@ -1,0 +1,138 @@
+<resources>
+
+	<dimen name="message_horizontal_margin">8dp</dimen>
+	<dimen name="grid_margin">3dp</dimen>
+
+	<dimen name="padding_one_dp">1dp</dimen>
+	<dimen name="padding_xxsmall">2dp</dimen>
+	<dimen name="padding_xsmall">4dp</dimen>
+	<dimen name="padding_small">6dp</dimen>
+	<dimen name="padding_normal">8dp</dimen>
+	<dimen name="padding_large">10dp</dimen>
+	<dimen name="padding_xlarge">12dp</dimen>
+	<dimen name="padding_xxlarge">14dp</dimen>
+	<dimen name="padding_xxxlarge">16dp</dimen>
+
+
+	<dimen name="font_navigation_tab">10sp</dimen>
+	<dimen name="font_notification_badge">10sp</dimen>
+
+	<dimen name="font_tiny">12sp</dimen>
+	<dimen name="font_small">14sp</dimen>
+	<dimen name="font_medium">15sp</dimen>
+	<dimen name="font_normal">20sp</dimen>
+	<dimen name="font_large">22sp</dimen>
+
+	<dimen name="static_font_tiny">12dp</dimen>
+	<dimen name="static_font_small">14dp</dimen>
+	<dimen name="static_font_normal">16dp</dimen>
+
+	<dimen name="button_corner_rad">2dp</dimen>
+
+	<dimen name="avatar_width_height">60dp</dimen>
+	<dimen name="avatar_width_height_normal">40dp</dimen>
+	<dimen name="avatar_width_height_people_view">50dp</dimen>
+	<dimen name="avatar_corner_rad">2dp</dimen>
+	<dimen name="avatar_border_width">2dp</dimen>
+	<dimen name="avatar_width_height_in_thread">32dp</dimen>
+	<dimen name="avatar_width_height_in_thread_commendation">100dp</dimen>
+	<dimen name="avatar_width_height_in_voip">128dp</dimen>
+	<dimen name="avatar_corner_rad_in_voip">8dp</dimen>
+	<dimen name="avatar_border_width_in_voip">2dp</dimen>
+	<dimen name="avatar_select_border_width_in_voip">3dp</dimen>
+
+	<dimen name="group_avatar_corner_radius">6dp</dimen>
+
+	<dimen name="cover_photo_height">200dp</dimen>
+	<dimen name="user_profile_avatar_max_width_height">74dp</dimen>
+	<dimen name="sticker_in_profile_width_height">80dp</dimen>
+	<dimen name="new_user_profile_avatar_max_width_height">120dp</dimen>
+	<dimen name="new_user_profile_margin_top">100dp</dimen>
+
+	<dimen name="homepage_item_height">72dp</dimen>
+
+	<dimen name="image_preview_dimen">150dp</dimen>
+	<dimen name="image_in_thread_default_dimen">170dp</dimen>
+	<dimen name="image_in_thread_max_dimen">270dp</dimen>
+	<dimen name="image_in_thread_corner_rad">10dp</dimen>
+	<dimen name="image_in_notif_corner_rad">4dp</dimen>
+
+	<dimen name="ack_in_thread_width">55dp</dimen>
+	<dimen name="ack_in_thread_height">35dp</dimen>
+	<dimen name="sticker_in_thread_width_height">128dp</dimen>
+
+	<dimen name="sticker_preview_icon_width">28dp</dimen>
+	<dimen name="sticker_preview_icon_height">28dp</dimen>
+	<dimen name="sticker_preview_icon_background_width">48dp</dimen>
+	<dimen name="sticker_preview_icon_background_height">48dp</dimen>
+	<dimen name="sticker_preview_layout_height">128dp</dimen>
+	<dimen name="sticker_preview_icon_padding">8dp</dimen>
+
+	<dimen name="composebar_button_height">48dp</dimen>
+	<dimen name="composebar_height">48dp</dimen>
+
+	<dimen name="time_width">70dp</dimen>
+
+	<dimen name="message_count_width">38dp</dimen>
+	<dimen name="message_count_height">20dp</dimen>
+	<dimen name="message_count_margin_left">20dp</dimen>
+	<dimen name="message_count_margin_bottom">10dp</dimen>
+	<dimen name="message_count_width_and_margin">40dp</dimen>
+
+	<dimen name="bottom_bar_height">48dp</dimen>
+	<dimen name="top_bar_height">48dp</dimen>
+
+	<dimen name="setting_title_width">70dp</dimen>
+
+	<dimen name="pin_lock_layout_padding_bottom">64dp</dimen>
+
+	<dimen name="fab_sheet_elevation">8dp</dimen>
+
+	<dimen name="sheet_width">180dp</dimen>
+	<dimen name="sheet_spacing">10dp</dimen>
+	<dimen name="sheet_item_spacing">16dp</dimen>
+	<dimen name="sheet_item_image_spacing">24dp</dimen>
+	<dimen name="sheet_item_textsize">16sp</dimen>
+
+	<dimen name="ic_video_view_size">60dp</dimen>
+
+	<dimen name="ic_chat_function_size">55dp</dimen>
+
+	<dimen name="message_margin_bottom">20dp</dimen>
+
+	<dimen name="default_margin">16dp</dimen>
+	<dimen name="default_half_margin">8dp</dimen>
+	<dimen name="margin_xsmall">4dp</dimen>
+	<dimen name="margin_left">18dp</dimen>
+	<dimen name="margin_right">16dp</dimen>
+	<dimen name="margin_top">16dp</dimen>
+	<dimen name="margin_xlarge">16dp</dimen>
+	<dimen name="margin_bottom">16dp</dimen>
+	<dimen name="margin_mdpi">8dp</dimen>
+	<dimen name="margin_left_xlarge">20dp</dimen>
+	<dimen name="margin_material">24dp</dimen>
+
+    <dimen name="security_point">18dp</dimen>
+    <dimen name="security_bezier_curved_line">6dp</dimen>
+    <dimen name="security_phone_type">48dp</dimen>
+    <dimen name="security_action_button">48dp</dimen>
+    <dimen name="security_bound_padding">96dp</dimen>
+
+	<dimen name="action_bar_height">48dp</dimen>
+
+	<dimen name="powered_by_eko_height">30dp</dimen>
+
+	<dimen name="forms_avatar_width_height">52dp</dimen>
+	<dimen name="forms_avatar_radius">6dp</dimen>
+	<dimen name="forms_preview_status_bar_height">36dp</dimen>
+	<dimen name="forms_button_height">36dp</dimen>
+	<dimen name="forms_due_date_height">21dp</dimen>
+	<dimen name="forms_pending_tab_height">44dp</dimen>
+
+	<dimen name="voip_icon_control_width_height">48dp</dimen>
+	<dimen name="voip_accept_reject_control_width_height">72dp</dimen>
+	<dimen name="voip_indicator_user_height">5dp</dimen>
+
+	<dimen name="chat_edittext_margin_end">48dp</dimen>
+
+</resources>

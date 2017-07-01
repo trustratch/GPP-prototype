@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_marginLeft="40dp"
+    android:layout_width="60dp"
+    android:background="@drawable/shape_rectangle_conner_white_bg"
+    android:layout_height="60dp">
+
+    <View
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/pin_item_textview"
+        android:textColor="@color/secondary_text"
+        android:background="@drawable/oval_primary_color"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>

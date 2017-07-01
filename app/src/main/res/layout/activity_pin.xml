@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/word_file_bg"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <LinearLayout
+            android:weightSum="4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+        
+            <RelativeLayout
+                android:id="@+id/pinbox1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_conner_white_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <RelativeLayout
+                android:id="@+id/pinbox2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_conner_white_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/pinbox3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_conner_white_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <RelativeLayout
+                android:id="@+id/pinbox4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_conner_white_bg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+       
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/pin_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

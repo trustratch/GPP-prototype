@@ -5,16 +5,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.trust.reportbutton.EvaluationData;
 import com.example.trust.reportbutton.PasswordObject;
 import com.example.trust.reportbutton.R;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 import butterknife.Bind;
 
@@ -27,7 +22,7 @@ public class PasswordItemAdapter extends
 
 
     public PasswordItemAdapter() {
-        for (int i = 0 ; i <= 120 ; i++){
+        for (int i = 0 ; i <= 150 ; i++){
             passwordObjects.add(new PasswordObject(String.valueOf(i)));
         }
     }
@@ -66,7 +61,7 @@ public class PasswordItemAdapter extends
         void onPasswordClick(PasswordObject passwordObject);
     }
 
-    public class ViewHolder extends EkoViewHolder {
+    public class ViewHolder extends BaseViewHolder {
         @Bind(R.id.parent)
         View parent;
 

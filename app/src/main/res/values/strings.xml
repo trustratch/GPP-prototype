@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Demo</string>
+
+    <string name="large_text">
+        "H. Tao and C. Adams.\n"
+        "Pass-Go: A Proposal to Improve the Usability of Graphical Passwords.\n"
+        "Int. J. Network Security, 7(2):273–292, 2008.\n\n"
+
+        "   Inspired by an old Chinese game, Go, we have designed a new graphical password scheme, Pass-Go, in which a user selects intersections on a grid as a way to input a password."
+        "While offering an extremely large full password space (256 bits for the most basic scheme), \n"
+        "our scheme provides acceptable usability, as empirically demonstrated by, to the best of our knowledge, the largest user study (167 subjects involved) on graphical passwords,"
+        "conducted in the fall semester of 2005 in two university classes.\n\n"
+        "   Our scheme supports most application environments and input devices, rather than being limited to small mobile devices (PDAs), and can be used to derive cryptographic keys."
+
+        "We study the memorable password space and show the potential power of this scheme by exploring further improvements and variation mechanisms.\n\n"
+
+        "Read more \n"
+        "http://passgo.ca/ijns-2008-v7-n2-p273-292.pdf"
+    </string>
 </resources>

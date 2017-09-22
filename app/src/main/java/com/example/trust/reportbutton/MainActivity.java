@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.example.trust.reportbutton.recyclerview.CardItemAdapter;
 import com.example.trust.reportbutton.recyclerview.PinItemAdapter;
 
 import java.util.ArrayList;
@@ -18,22 +19,22 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {;
+
+    @Bind(R.id.main_recyclerview)
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        setupRecyclerview();
     }
 
-   @OnClick(R.id.set_password_container)
-    protected void onSetPasswordClick(){
-       startActivity(new Intent(this, SetPasswordActivity.class));
-   }
 
-    @OnClick(R.id.enter_password_container)
-    protected void onEnterPasswordClick(){
-        startActivity(new Intent(this, PinActivity.class));
+    private void setupRecyclerview(){
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new CardItemAdapter(this));
     }
 }

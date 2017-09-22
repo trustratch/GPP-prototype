@@ -19,7 +19,6 @@ import butterknife.ButterKnife;
 
 import static com.example.trust.reportbutton.SharedKey.SHARED_PREF_KEY;
 import static com.example.trust.reportbutton.SharedKey.SHARED_PREF_ORDER_KEY;
-import static com.example.trust.reportbutton.SharedKey.SHARED_PREF_PASSWORD_KEY;
 
 public class PinActivity extends AppCompatActivity  implements PinItemAdapter.OnPinClickListener{
 
@@ -58,7 +57,7 @@ public class PinActivity extends AppCompatActivity  implements PinItemAdapter.On
         if (pinCount == 4) {
             saveOrder(order);
             Toast.makeText(this, getOrder(), Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, PasswordActivity.class));
+            startActivity(new Intent(this, PassPointPasswordActivity.class));
             finish();
         }
     }

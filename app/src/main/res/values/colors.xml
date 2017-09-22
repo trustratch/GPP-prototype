@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#ababab</color>
+<resources>#
+    <color name="colorPrimary">#2D2D2D</color>
+    <color name="colorPrimaryDark">#1a1a1a</color>
+    <color name="colorPrimaryLight">#414141</color>
+    <color name="colorAccent">#EB5757</color>
 
     <color name="theme_color">@color/AppPrimaryColor</color>
     <color name="action_color">@color/AccentColor</color>
@@ -82,8 +83,8 @@
     <color name="black">#000000</color>
 
     <color name="transparent">#00ffffff</color>
-    <color name="dark_translucent">#99000000</color>
-    <color name="light_translucent">#1a000000</color>
+    <color name="dark_translucent">#73000000</color>
+    <color name="light_translucent">#76f7f7f7</color>
 
     <color name="kpi_low">#6a6a6a</color>
     <color name="kpi_medium">#ffa300</color>

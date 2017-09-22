@@ -66,7 +66,7 @@ public class PinItemAdapter extends
     }
 
 
-    public class ViewHolder extends EkoViewHolder {
+    public class ViewHolder extends BaseViewHolder {
         @Bind(R.id.pin_item_textview)
         TextView textView;
         @Bind(R.id.parent)

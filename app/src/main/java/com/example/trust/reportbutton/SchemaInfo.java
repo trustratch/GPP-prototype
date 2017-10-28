@@ -6,6 +6,7 @@ import android.support.annotation.DrawableRes;
 
 import com.example.trust.reportbutton.openpassgo.PassGoMainActivity;
 import com.example.trust.reportbutton.passpoint.PassPointMainActivity;
+import com.example.trust.reportbutton.pin.PinMainActivity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -73,6 +74,7 @@ public class SchemaInfo implements Serializable {
         schemaInfos.add(createPassGo(context));
         schemaInfos.add(createPassPoint(context));
         schemaInfos.add(createPhotographicAuthen(context));
+        schemaInfos.add(createPin(context));
         return schemaInfos;
     }
 
@@ -102,6 +104,16 @@ public class SchemaInfo implements Serializable {
         passgo.setDescription(context.getString(R.string.large_text));
         passgo.setDetails(context.getString(R.string.large_text));
         passgo.setActivity(PassPointMainActivity.class);
+        passgo.setImageRes(R.drawable.photographer);
+        return passgo;
+    }
+
+    private static SchemaInfo createPin(Context context){
+        SchemaInfo passgo = new SchemaInfo();
+        passgo.setName("PINs");
+        passgo.setDescription(context.getString(R.string.large_text));
+        passgo.setDetails(context.getString(R.string.large_text));
+        passgo.setActivity(PinMainActivity.class);
         passgo.setImageRes(R.drawable.photographer);
         return passgo;
     }

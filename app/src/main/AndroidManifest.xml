@@ -46,6 +46,13 @@
         <activity android:name=".openpassgo.PassGoLoginActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".pin.PinMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".pin.PinActivity"
+            android:screenOrientation="portrait"/>
+
+
         <activity android:name=".ScrollingActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>

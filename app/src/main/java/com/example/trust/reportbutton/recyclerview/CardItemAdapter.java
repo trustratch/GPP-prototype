@@ -43,6 +43,7 @@ public class CardItemAdapter extends
         final SchemaInfo schemaInfo = schemaInfos.get(position);
         holder.titleTextView.setText(schemaInfo.getName());
         holder.descriptionTextView.setText(schemaInfo.getDescription());
+        holder.imageView.setImageResource(schemaInfo.getImageRes());
     }
 
     @Override
@@ -64,7 +65,9 @@ public class CardItemAdapter extends
 
         @OnClick(R.id.card_parent_view)
         protected void onCardClick() {
-            getView().getContext().startActivity(new Intent(getView().getContext(), ScrollingActivity.class));
+            Intent intent = new Intent(getView().getContext(), ScrollingActivity.class);
+            intent.putExtra("Data", schemaInfos.get(getAdapterPosition()));
+            getView().getContext().startActivity(intent);
         }
 
         public ViewHolder(View view) {

@@ -1,23 +1,15 @@
 package com.example.trust.reportbutton;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import com.example.trust.reportbutton.recyclerview.CardItemAdapter;
-import com.example.trust.reportbutton.recyclerview.PinItemAdapter;
-
-import java.util.ArrayList;
-import java.util.Random;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {;
 

@@ -19,11 +19,22 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+
             <ImageView
+                android:id="@+id/cover_imageview"
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/photographer"/>
+
+            <RelativeLayout
+                android:id="@+id/card_image_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dark_translucent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
 
 
             <android.support.v7.widget.Toolbar
@@ -45,6 +56,6 @@
         android:layout_margin="16dp"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_media_play" />
 
 </android.support.design.widget.CoordinatorLayout>

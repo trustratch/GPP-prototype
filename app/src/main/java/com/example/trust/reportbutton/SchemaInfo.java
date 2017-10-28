@@ -4,9 +4,13 @@ package com.example.trust.reportbutton;
 import android.content.Context;
 import android.support.annotation.DrawableRes;
 
+import com.example.trust.reportbutton.openpassgo.PassGoMainActivity;
+import com.example.trust.reportbutton.passpoint.PassPointMainActivity;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class SchemaInfo {
+public class SchemaInfo implements Serializable {
 
     private String name;
     private String description;
@@ -14,6 +18,7 @@ public class SchemaInfo {
     @DrawableRes
     private int imageRes;
     private String videoUrl;
+    private Class activityClass;
 
     public String getName() {
         return name;
@@ -55,12 +60,19 @@ public class SchemaInfo {
         this.videoUrl = videoUrl;
     }
 
+    public Class getActivityClass() {
+        return activityClass;
+    }
+
+    public void setActivity(Class activityClass) {
+        this.activityClass = activityClass;
+    }
 
     public static ArrayList<SchemaInfo> create(Context context){
         ArrayList<SchemaInfo> schemaInfos = new ArrayList<>();
         schemaInfos.add(createPassGo(context));
         schemaInfos.add(createPassPoint(context));
-        schemaInfos.add(createCognitiveAuthen(context));
+        schemaInfos.add(createPhotographicAuthen(context));
         return schemaInfos;
     }
 
@@ -69,6 +81,8 @@ public class SchemaInfo {
         passgo.setName("Pass Go");
         passgo.setDescription(context.getString(R.string.large_text));
         passgo.setDetails(context.getString(R.string.large_text));
+        passgo.setActivity(PassGoMainActivity.class);
+        passgo.setImageRes(R.drawable.passgo);
         return passgo;
     }
 
@@ -77,14 +91,18 @@ public class SchemaInfo {
         passgo.setName("Pass Point");
         passgo.setDescription(context.getString(R.string.large_text));
         passgo.setDetails(context.getString(R.string.large_text));
+        passgo.setActivity(PassPointMainActivity.class);
+        passgo.setImageRes(R.drawable.photographer);
         return passgo;
     }
 
-    private static SchemaInfo createCognitiveAuthen(Context context){
+    private static SchemaInfo createPhotographicAuthen(Context context){
         SchemaInfo passgo = new SchemaInfo();
-        passgo.setName("Cognitive Authentication");
+        passgo.setName("Photographic Authentication");
         passgo.setDescription(context.getString(R.string.large_text));
         passgo.setDetails(context.getString(R.string.large_text));
+        passgo.setActivity(PassPointMainActivity.class);
+        passgo.setImageRes(R.drawable.photographer);
         return passgo;
     }
 

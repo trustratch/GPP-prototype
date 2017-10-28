@@ -22,18 +22,29 @@
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".PassPointPasswordActivity"
+        <activity android:name=".passpoint.PassPointPasswordActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".PassPointSetActivity"
+        <activity android:name=".passpoint.PassPointSetActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".PinActivity"
+        <activity android:name=".passpoint.PassPointMainActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".PassPointActivity"
+        <activity android:name=".openpassgo.PassGoMainActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".openpassgo.PassGoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".openpassgo.PassGoSettingsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".openpassgo.PassGoCreatePasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".openpassgo.PassGoLoginActivity"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".ScrollingActivity"
             android:theme="@style/AppTheme.NoActionBar"

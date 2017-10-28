@@ -17,4 +17,40 @@
         "Read more \n"
         "http://passgo.ca/ijns-2008-v7-n2-p273-292.pdf"
     </string>
+
+
+    <!-- general-purpose Strings -->
+    <string name="action_settings">Settings</string>
+    <string name="btn_create_password">Create password</string>
+    <string name="btn_enter_password">Enter password</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_clearall">Clear all</string>
+    <string name="btn_undo">Undo</string>
+    <string name="msg_pw_correct">Password correct!</string>
+    <string name="msg_pw_wrong">Wrong password!</string>
+    <string name="label_input">Input:</string>
+    <string name="label_round">Round</string>
+
+    <!-- Open Pass-Go Strings -->
+    <string name="title_activity_pass_go">Open Pass-Go</string>
+    <string name="title_activity_pass_go_create_password">Open Pass-Go: Create Password</string>
+    <string name="title_activity_pass_go_login">Open Pass-Go: Enter Password</string>
+    <string name="title_dialog_pass_go_createpw">Select pattern</string>
+    <string name="msg_dialog_pass_go_createpw">Please draw your desired pattern in the designated grid.\nYour pattern has to contain %d line segments and / or dots.</string>
+    <string name="msg_dialog_pass_go_deletepattern">Would you really like to delete the pattern?</string>
+    <string name="title_dialog_pass_go_rememberpw">Please memorize the pattern:</string>
+
+    <!-- Papers -->
+    <string name="paper_check_out">Check out our paper:</string>
+    <string name="paper_references">This implementation is based on:</string>
+    <string name="paper_pass_go">H. Tao and C. Adams. Pass-Go: A Proposal to Improve the Usability of Graphical Passwords. <i>Int. J. Network Security</i>, 7(2):273–292, 2008.</string>
+    <string name="paper_tapi">J. Citty and D. R. Hutchings. TAPI: touch&#8211;screen authentication using partitioned images. Tech. Report 2010&#8211;1, Elon University, 2010.</string>
+    <string name="paper_uyi">E. Hayashi, R. Dhamija, N. Christin, and A. Perrig. Use Your Illusion: secure authentication usable anywhere. In <i>Proc. SOUPS \'08</i>. ACM, 2008.</string>
+    <string name="paper_miba">D. Ritter, F. Schaub, M. Walch, and M. Weber. MIBA: Multitouch image-based authentication on smartphones. In <i>Proc. CHI \'13 Extended Abstracts</i>. ACM, 2013.</string>
+    <string name="paper_exploring_designspace">F. Schaub, M. Walch, B. Könings, and M. Weber. Exploring the design space of graphical passwords on smartphones. In <i>Proc. SOUPS \'13</i>. ACM, 2013.</string>
+
+
 </resources>

@@ -70,9 +70,8 @@ public class PassPointPasswordActivity extends AppCompatActivity implements Pass
 
     @Override
     public void onPasswordClick(PasswordObject passwordObject) {
-        String[] orderArray = getSharedPrefValue(SHARED_PREF_ORDER_KEY).split("-");
         count++;
-        boolean isCorrect = Objects.equals(passwordHashMap.get(orderArray[count - 1]), passwordObject.getValue());
+        boolean isCorrect = Objects.equals(passwordHashMap.get(String.valueOf(count)), passwordObject.getValue());
         if (isCorrect) {
             correctCount++;
         }

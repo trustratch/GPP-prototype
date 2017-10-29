@@ -52,6 +52,17 @@
         <activity android:name=".pin.PinActivity"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".passface.PassFaceMainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".passface.PassFaceSetActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".passface.PassFacePasswordActivity"
+            android:screenOrientation="portrait"/>
+
+
+
 
         <activity android:name=".ScrollingActivity"
             android:theme="@style/AppTheme.NoActionBar"

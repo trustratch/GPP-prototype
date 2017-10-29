@@ -14,6 +14,8 @@ import com.example.trust.reportbutton.R;
 import com.example.trust.reportbutton.recyclerview.PassFaceItemAdapter;
 import com.example.trust.reportbutton.recyclerview.PasswordItemAdapter;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -21,6 +23,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 import static com.example.trust.reportbutton.SharedKey.SHARED_PREF_KEY;
+import static com.example.trust.reportbutton.SharedKey.SHARED_PREF_PASSFACE_KEY;
 import static com.example.trust.reportbutton.SharedKey.SHARED_PREF_PASSWORD_KEY;
 
 public class PassFacePasswordActivity extends AppCompatActivity implements PassFaceItemAdapter.OnPasswordClickListener {
@@ -28,19 +31,22 @@ public class PassFacePasswordActivity extends AppCompatActivity implements PassF
     @Bind(R.id.password_recyclerview)
     RecyclerView pinRecyclerView;
 
-
-    private HashMap<String, String> passwordHashMap = new HashMap<>();
     private int count = 0;
-    private int correctCount = 0;
+    private String password = "";
+
+    private static final int PASSWORD_LENGTH = 4;
+
+    ArrayList<Integer> guessList = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_passface);
+        setContentView(R.layout.activity_passface );
         ButterKnife.bind(this);
         getSupportActionBar().hide();
         setupPinRecyclerView();
-        createHashMap();
+        createPassword();
     }
 
     private void setupPinRecyclerView() {
@@ -56,10 +62,15 @@ public class PassFacePasswordActivity extends AppCompatActivity implements PassF
         pinRecyclerView.setAdapter(passwordItemAdapter);
     }
 
-    private void createHashMap() {
-        String[] passwordArray = getSharedPrefValue(SHARED_PREF_PASSWORD_KEY).split("-");
-        for (int i = 0; i <= 3; i++) {
-            passwordHashMap.put(String.valueOf(i + 1), passwordArray[i]);
+    private void createPassword() {
+        String[] passwordArray = getSharedPrefValue(SHARED_PREF_PASSFACE_KEY).split("-");
+        ArrayList<Integer> passwordList = new ArrayList<>();
+        for (int i = 0; i < PASSWORD_LENGTH; i++) {
+            passwordList.add(Integer.parseInt(passwordArray[i]));
+        }
+        Collections.sort(passwordList);
+        for (int i = 0; i < PASSWORD_LENGTH; i++) {
+            password = password + "" + passwordList.get(i);
         }
     }
 
@@ -69,21 +80,22 @@ public class PassFacePasswordActivity extends AppCompatActivity implements PassF
     }
 
     @Override
-    public void onPasswordClick(PasswordObject passwordObject) {
+    public void onPasswordClick(PassFacePasswordPicture passwordObject) {
         count++;
-        boolean isCorrect = Objects.equals(passwordHashMap.get(String.valueOf(count)), passwordObject.getValue());
-        if (isCorrect) {
-            correctCount++;
-        }
-
-        if (count == 4) {
-            if (correctCount == 4) {
+        guessList.add(passwordObject.getValue());
+        if (count == PASSWORD_LENGTH) {
+            String guess = "";
+            Collections.sort(guessList);
+            for (int i = 0; i < PASSWORD_LENGTH; i++) {
+                guess = guess + "" + guessList.get(i);
+            }
+            if (Objects.equals(guess, password)) {
                 Toast.makeText(this, "CORRECT!", Toast.LENGTH_SHORT).show();
                 finish();
             } else {
                 Toast.makeText(this, "WRONG!", Toast.LENGTH_SHORT).show();
                 count = 0;
-                correctCount = 0;
+                guessList.clear();
             }
         }
 

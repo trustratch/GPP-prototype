@@ -57,7 +57,7 @@ public class PassFaceSetActivity extends AppCompatActivity implements PassFaceIt
     }
 
     @Override
-    public void onPasswordClick(PasswordObject passwordObject) {
+    public void onPasswordClick(PassFacePasswordPicture passwordObject) {
         clickCount++;
         if (Objects.equals(password, "")) {
             password = password + passwordObject.getValue();

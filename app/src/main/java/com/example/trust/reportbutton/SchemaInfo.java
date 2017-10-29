@@ -5,6 +5,7 @@ import android.content.Context;
 import android.support.annotation.DrawableRes;
 
 import com.example.trust.reportbutton.openpassgo.PassGoMainActivity;
+import com.example.trust.reportbutton.passface.PassFaceMainActivity;
 import com.example.trust.reportbutton.passpoint.PassPointMainActivity;
 import com.example.trust.reportbutton.pin.PinMainActivity;
 
@@ -103,7 +104,7 @@ public class SchemaInfo implements Serializable {
         passgo.setName("Photographic Authentication");
         passgo.setDescription(context.getString(R.string.large_text));
         passgo.setDetails(context.getString(R.string.large_text));
-        passgo.setActivity(PassPointMainActivity.class);
+        passgo.setActivity(PassFaceMainActivity.class);
         passgo.setImageRes(R.drawable.photographer);
         return passgo;
     }

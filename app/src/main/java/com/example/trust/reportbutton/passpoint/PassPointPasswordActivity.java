@@ -44,7 +44,7 @@ public class PassPointPasswordActivity extends AppCompatActivity implements Pass
     }
 
     private void setupPinRecyclerView() {
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 10, GridLayoutManager.VERTICAL, false) {
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 8, GridLayoutManager.VERTICAL, false) {
             @Override
             public boolean canScrollVertically() {
                 return false;
